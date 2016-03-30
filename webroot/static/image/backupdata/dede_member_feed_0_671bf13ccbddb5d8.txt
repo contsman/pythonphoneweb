@@ -1,0 +1,1 @@
+INSERT INTO `dede_member_feed` VALUES('1','0','','','feedback','29','1375028149',' 评论了文章 &lt;a href=&#039;/plus/view.php?aid=29&#039;&gt;中央电视台塔、海底世界、颐和园、长城、十三陵&lt;/a&gt;','P3F9DidW.最好的a href=http://www.kyfei.com网站推广软件/a,最好的a href=http://www.kyfei.com网络推广软件/a,www.kyfei.com 最好的a href=http://www.kyfei.com网络群发软件/a,最好的a href=http://www.kyfei.com信息群发软件/a, 最好的a href=http://www','1');

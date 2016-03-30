@@ -1,0 +1,6 @@
+INSERT INTO `dede_hotel` VALUES('68','25','','','127.0.0.1','二星级','168','#');
+INSERT INTO `dede_hotel` VALUES('69','25','','','127.0.0.1','三星级','178','#');
+INSERT INTO `dede_hotel` VALUES('70','25','','','127.0.0.1','三星级','278','#');
+INSERT INTO `dede_hotel` VALUES('71','25','','','127.0.0.1','三星级','298','#');
+INSERT INTO `dede_hotel` VALUES('72','25','','','127.0.0.1','五星级','398','#');
+INSERT INTO `dede_hotel` VALUES('73','25','','','127.0.0.1','三星级','168','#');

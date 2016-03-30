@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  <title>北京旅游团购网-北京一日游团购_长城一日游团购_北京周边旅游团购_北京旅游集散中心团购</title>
+  <meta name="keywords" content="北京团购旅游,北京一日游团购,北京长城一日游团购,北京团购周边游" />
+  <meta name="description" content=
+  "北京旅游团购网，主要致力于精品旅游团购服务,北京旅游团购,北京一日游团购,北京周边游团购,北京国内游团购." />
+  <link href="../../static/css/android/head.css" rel="stylesheet" type="text/css" />
+  <link href="../../static/css/android/tuan.css" rel="stylesheet" type="text/css" />
+  <style type="text/css">
+/*<![CDATA[*/
+  <!--
+  #menu ul li.index a{ display:block; background:#fff; border-top:2px solid #FFA63C; color:#333; height:40px; line-height:40px;}
+  -->
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div id="top">
+    <div class="top w960">
+      您好，欢迎您访问<strong>国际旅行社前门营业部</strong>团购网，我们只做精品高端旅游服务！
+    </div>
+  </div>
+
+  <div id="head">
+    <div class="logo w960"><img src="../../static/image/logo.jpg" title=
+    "北京旅游团购网-北京一日游团购_长城一日游团购_北京周边旅游团购_北京旅游集散中心团购" /></div>
+  </div>
+  <div id="main">
+      <div class="list">
+                <div id="slider" class="swipe">
+                    <script type="text/javascript" src="../../static/thirdjs/swipe.js"></script>
+                    <div class="swipe-wrap">
+                        {%for swipe in swipes%}
+                            <div class="thumb" style="margin:0">
+                                <a href="detail?aid={{swipe[0]}}">
+                                    <span>{{swipe[4]}}</span>
+                                    <img src="{{swipe[6]}}" alt="Icon">
+                                </a>
+                            </div><!-- thumb end-->
+                            <script type="text/javascript">
+                                var elem = document.getElementById('slider');
+                                window.mySwipe = Swipe(elem, {
+                                    bulletWrapperId : 'swipe_bullet_wrapper',
+                                    bulletClass : 'swipe-bullet',
+                                    bulletActiveClass : 'active',
+                                    startSlide: 0,
+                                    speed: 500,
+                                    auto: 3000,
+                                    continuous: true,
+                                    circular: true,
+                                    disableScroll: false,
+                                    stopPropagation: false,
+                                    callback: function(index, elem) {},
+                                    transitionEnd: function(index, elem) {}
+                                });
+                            </script>
+                        {%endfor%}
+                    </div>
+                </div>
+                <div id="swipe_direction_nav"><div id="swipe_bullet_wrapper"><a href=""></a></div></div>
+                <!--slideshow end-->
+        </div>
+      {%for section in sections%}
+          <div class="t_list">
+            <div class="titleBox">
+                <a href="vpl?id={{section['type'][0]}}">
+                    <p class="bold">{{section['type'][1]}}</p>
+                    <p class="small" title="{{section['type'][2]}}">{{section['type'][2]}}</p>
+                </a>
+            </div>
+              {% if section['lines']%}
+                <div class="list">
+                    <div class="row">
+                        <div class="thumb"><a href="detail?aid={{section['lines'][0][0]}}">
+                                <img src="{{section['lines'][0][6]}}" alt="Icon"></a>
+                                <p class="bold"><a href="detail?aid={{section['lines'][0][1]}}">{{section['lines'][0][5]}}</a></p><p class="small"><span class="lt">|</span>&nbsp;{{section['lines'][0][4]}}</p>
+                            </div><!-- thumb end-->
+                        <div class="thumb"><a href="detail?aid={{section['lines'][1][0]}}">
+                                <img src="{{section['lines'][1][6]}}" alt="Icon"></a>
+                                <p class="bold"><a href="detail?aid={{section['lines'][0][1]}}">{{section['lines'][1][5]}}</a></p><p class="small"><span class="lt">|</span>&nbsp;{{section['lines'][1][4]}}</p>
+                            </div><!-- thumb end-->
+                        </div>
+                </div>
+              <div class="clear"></div>
+              {% endif %}
+        </div>
+      {%endfor%}
+
+    <div class="t_list">
+      <div class="clear"></div>
+    </div>
+
+    <div class="foot">
+      <a>国际旅行社前门营业部</a><br />
+    </div>
+  </div>
+</body>
+</html>
